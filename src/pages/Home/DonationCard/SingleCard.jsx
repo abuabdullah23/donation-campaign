@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SingleCard = ({ item }) => {
     const { id, image, title, category, card_bg, category_bg, text_color, description, price } = item;
 
-    console.log(card_bg);
     return (
-        <div
+        <Link
+            to={`/donation/details/${id}`}
             style={{ backgroundColor: `${card_bg}` }}
             className='w-full rounded-md cursor-pointer hover:scale-[103%] transition-all'>
 
@@ -20,7 +21,7 @@ const SingleCard = ({ item }) => {
                     style={{ color: `${text_color}` }}
                     className='text-lg font-semibold'>{title}</h2>
             </div>
-        </div>
+        </Link>
     );
 };
 

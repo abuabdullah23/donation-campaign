@@ -4,6 +4,7 @@ import logo from '../../assets/images/Logo.png'
 import { BsList } from 'react-icons/bs'
 import { MdClose } from 'react-icons/md'
 import ActiveLink from '../ActiveLink/ActiveLink';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [show, setShow] = useState(false);
@@ -19,10 +20,12 @@ const Navbar = () => {
     ]
 
     return (
-        <div>
+        <div className='py-5'>
             <Container>
                 <div className='flex justify-between items-center'>
-                    <img src={logo} className='h-[48px] md:h-[72px]' alt="logo" />
+                    <Link to={'/'}>
+                        <img src={logo} className='h-[48px] md:h-[72px]' alt="logo" />
+                    </Link>
                     <nav className='hidden lg:block'>
                         <ul className='flex items-center gap-6'>
                             {
@@ -42,7 +45,7 @@ const Navbar = () => {
 
             {/* for responsive navbar: conditional rendering */}
             <div className='relative'>
-                <nav className={`${show ? 'left-0' : '-top-[300px]'} absolute top-0 bg-slate-200 w-full transition-all duration-500 lg:hidden`}>
+                <nav className={`${show ? 'left-0' : '-top-[300px]'} absolute top-0 bg-slate-200 w-full transition-all duration-500 lg:hidden z-10`}>
                     <ul className='flex flex-col items-center gap-3 p-5'>
                         {
                             navOptions.map((nav) => <li key={nav.id} onClick={closeNavbar}>

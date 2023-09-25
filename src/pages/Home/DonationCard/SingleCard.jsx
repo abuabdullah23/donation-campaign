@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const SingleCard = ({ item }) => {
-    const { id, image, title, category, card_bg, category_bg, text_color, description, price } = item;
+    const { id, image, title, category, card_bg, category_bg, text_color} = item;
 
     return (
         <Link

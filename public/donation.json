@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/x7T5ry5/1-Medical-Supplies.webp",
+        "title": "Medical Supplies",
+        "category": "Health",
+        "category_bg": "#0052FF33",
+        "card_bg": "#0052FF26",
+        "text_color": "#0052FF",
+        "description": "Donate essential medical supplies to help those in need. Your contribution can make a significant difference in providing healthcare access to undeserved communities. Medical supplies such as masks, gloves, and sanitizers are crucial for protecting frontline healthcare workers and vulnerable individuals. Your generosity can save lives and ensure that healthcare facilities have the resources they need to provide quality care. Join us in this important effort to promote good health and well-being for all.",
+        "price": 50
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/Rj3PK9D/2-Winter-Clothes.jpg",
+        "title": "Winter Clothes",
+        "category": "Clothing",
+        "category_bg": "#79C23F33",
+        "card_bg": "#79C23F26",
+        "text_color": "#79C23F",
+        "description": "Donate warm winter clothes to help those without proper attire during the cold season. Many individuals, especially in colder regions, struggle to stay warm when winter arrives. Your contribution can provide jackets, sweaters, and blankets to those in need. By giving the gift of warmth, you can make a difference in the lives of vulnerable individuals and families, ensuring they stay cozy and comfortable during the chilly months.",
+        "price": 30
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/6vRBDmR/3-Scholarship-Fund.jpg",
+        "title": "Scholarship Fund",
+        "category": "Education",
+        "category_bg": "#FF444A33",
+        "card_bg": "#FF444A26",
+        "text_color": "#FF444A",
+        "description": "Support education by contributing to a scholarship fund for underprivileged students. Your donation can transform lives by providing access to quality education. Scholarships enable students to pursue their dreams and achieve academic success. By investing in education, you empower individuals to build a brighter future for themselves and their communities. Join us in breaking down barriers to education and creating opportunities for all.",
+        "price": 100
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/GvbvkSP/4-Food-Drive.jpg",
+        "title": "Food Drive",
+        "category": "Food",
+        "category_bg": "#F8714733",
+        "card_bg": "#F8714726",
+        "text_color": "#F87147",
+        "description": "Contribute to a food drive and provide meals to the hungry in your community. Your support can help alleviate hunger and food insecurity. Many individuals and families face the daily challenge of accessing nutritious meals. Your donation can make a direct impact by filling pantries and ensuring that no one goes to bed hungry. Join us in the fight against hunger and be part of a compassionate community dedicated to making a difference.",
+        "price": 20
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/68G4djV/5-Clothing.png",
+        "title": "Used Clothing Drive",
+        "category": "Clothing",
+        "category_bg": "#79C23F33",
+        "card_bg": "#79C23F26",
+        "text_color": "#79C23F",
+        "description": "Donate clothing for children in need of clothing and warmth. Many children lack proper clothing, which is essential for their well-being and comfort. Your contribution can provide them with clothing items such as jackets, shoes, and winter attire. By keeping children warm and protected, you can make a positive impact on their health and happiness. Join us in ensuring that every child has access to essential clothing.",
+        "price": 25
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/s2LbLP8/6-Education.png",
+        "title": "Good education",
+        "category": "Education",
+        "category_bg": "#FF444A33",
+        "card_bg": "#FF444A26",
+        "text_color": "#FF444A",
+        "description": "Provide books to schools to promote literacy and education. Access to books is a fundamental aspect of learning and personal growth. Your donation can enrich the educational experience of students by expanding their access to valuable resources. By supporting literacy, you empower individuals to acquire knowledge and skills that can shape their future. Join us in fostering a love for learning and equipping students for success.",
+        "price": 40
+    },
+    {
+        "id": 7,
+        "image": "https://i.ibb.co/T153yzQ/7-Health.png",
+        "title": "Clean water for children",
+        "category": "Health",
+        "category_bg": "#0052FF33",
+        "card_bg": "#0052FF26",
+        "text_color": "#0052FF",
+        "description": "Support healthcare by donating essential medical equipment. Your contribution can improve the quality of healthcare services and save lives. Medical equipment such as ventilators, oxygen concentrators, and diagnostic tools play a crucial role in diagnosing and treating illnesses. Your generosity can help healthcare facilities meet the demands of patient care effectively. Join us in ensuring that healthcare professionals have the tools they need to provide the best possible care to patients.",
+        "price": 75
+    },
+    {
+        "id": 8,
+        "image": "https://i.ibb.co/zPGVVb5/8-Food.png",
+        "title": "Better Food for Everyone",
+        "category": "Food",
+        "category_bg": "#F8714733",
+        "card_bg": "#F8714726",
+        "text_color": "#F87147",
+        "description": "Support emergency relief efforts by providing meals to disaster-affected areas. During times of crisis, access to food becomes critical. Your donation can help organizations respond quickly to emergencies and provide meals to those affected by natural disasters or conflicts. By contributing to emergency meals, you ensure that individuals and families have access to nourishing food when they need it most. Join us in providing relief and comfort during challenging times.",
+        "price": 50
+    },
+    {
+        "id": 9,
+        "image": "https://i.ibb.co/XS571Nd/9-Vaccination-Campaign.jpg",
+        "title": "Vaccination Campaign",
+        "category": "Health",
+        "category_bg": "#0052FF33",
+        "card_bg": "#0052FF26",
+        "text_color": "#0052FF",
+        "description": "Contribute to a vaccination campaign to protect vulnerable populations. Vaccinations are a vital tool in preventing the spread of diseases and saving lives. Your support can help organizations conduct vaccination campaigns in underserved areas, ensuring that communities are immunized against preventable illnesses. By supporting vaccination efforts, you play a crucial role in promoting public health and well-being. Join us in the fight against infectious diseases and the protection of communities.",
+        "price": 60
+    },
+    {
+        "id": 10,
+        "image": "https://i.ibb.co/nnYCnKF/10-Nutritional-Aid.jpg",
+        "title": "Nutritional Aid",
+        "category": "Food",
+        "category_bg": "#F8714733",
+        "card_bg": "#F8714726",
+        "text_color": "#F87147",
+        "description": "Support nutritional aid programs to combat hunger and malnutrition. Adequate nutrition is essential for overall health and well-being, yet many individuals face food insecurity and inadequate access to nutritious meals. Your contribution can provide nutritional aid in the form of food packages, supplements, and education on healthy eating. By addressing hunger and malnutrition, you help individuals lead healthier lives and build stronger communities. Join us in the fight against hunger and the promotion of nutritional well-being. These extended descriptions provide a more detailed overview of each donation item and the impact that contributions can make in various categories.",
+        "price": 35
+    },
+    {
+        "id": 11,
+        "image": "https://i.ibb.co/hY3n4rM/11-Warm-Blankets.jpg",
+        "title": "Warm Blankets",
+        "category": "Clothing",
+        "category_bg": "#79C23F33",
+        "card_bg": "#79C23F26",
+        "text_color": "#79C23F",
+        "description": "Provide warm blankets to homeless individuals during the winter season. For those experiencing homelessness, staying warm and comfortable can be a daily struggle, especially in cold weather. Your donation can provide essential blankets to offer warmth and protection. By extending a helping hand, you can make a significant impact on the lives of vulnerable individuals, ensuring they have a comfortable and safe place to rest during the winter nights.",
+        "price": 15
+    },
+    {
+        "id": 12,
+        "image": "https://i.ibb.co/X5ss0gH/12-STEM-Education.jpg",
+        "title": "STEM Education",
+        "category": "Education",
+        "category_bg": "#FF444A33",
+        "card_bg": "#FF444A26",
+        "text_color": "#FF444A",
+        "description": "Support STEM (Science, Technology, Engineering, and Mathematics) education programs for aspiring young scientists and engineers. Your donation can inspire the next generation of innovators and problem solvers. STEM education equips students with the skills and knowledge needed to tackle complex challenges and drive technological advancements. By investing in STEM education, you contribute to the development of a skilled workforce and the advancement of science and technology. Join us in shaping the future of STEM education and empowering students to excel.",
+        "price": 80
+    }
+]

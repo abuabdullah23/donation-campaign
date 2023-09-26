@@ -1,62 +1,44 @@
 import React, { useState } from 'react';
-import Container from '../Container/Container';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/images/Logo.png'
 import { BsList } from 'react-icons/bs'
 import { MdClose } from 'react-icons/md'
 import ActiveLink from '../ActiveLink/ActiveLink';
-import { Link } from 'react-router-dom';
+import Container from '../Container/Container';
 
 const Navbar = () => {
-    const [show, setShow] = useState(false);
-
-    const closeNavbar = () => {
-        setShow(false)
-    }
-
-    const navOptions = [
-        { id: 1, path: '/', title: 'Home' },
-        { id: 2, path: '/donation', title: 'Donation' },
-        { id: 3, path: '/statistics', title: 'Statistics' },
-    ]
-
+    const [open, setOpen] = useState(false);
     return (
-        <div className='py-5'>
+        <nav className='bg-white sticky top-0 z-10 drop-shadow-sm'>
             <Container>
-                <div className='flex justify-between items-center'>
-                    <Link to={'/'}>
-                        <img src={logo} className='h-[48px] md:h-[72px]' alt="logo" />
-                    </Link>
-                    <nav className='hidden lg:block'>
-                        <ul className='flex items-center gap-6'>
-                            {
-                                navOptions.map((nav) => <li key={nav.id}>
-                                    <ActiveLink to={nav.path} >{nav.title}</ActiveLink>
-                                </li>)
-                            }
-                        </ul>
-                    </nav>
-                    <div onClick={() => setShow(!show)} className='bg-gray-200 p-2 rounded-md cursor-pointer block lg:hidden'>
-                        {
-                            show ? <MdClose /> : <BsList />
-                        }
-                    </div>
+                <div onClick={() => setOpen(!open)} className='py-2 md:hidden'>
+                    <span>{
+                        open === true ?
+                            <MdClose className="h-6 w-6" />
+                            : <BsList className="h-6 w-6" />
+                    }</span>
                 </div>
-            </Container >
 
-            {/* for responsive navbar: conditional rendering */}
-            <div className='relative'>
-                <nav className={`${show ? 'left-0' : '-top-[300px]'} absolute top-0 bg-slate-200 w-full transition-all duration-500 lg:hidden z-10`}>
-                    <ul className='flex flex-col items-center gap-3 p-5'>
-                        {
-                            navOptions.map((nav) => <li key={nav.id} onClick={closeNavbar}>
-                                <ActiveLink to={nav.path} >{nav.title}</ActiveLink>
-                            </li>)
-                        }
+                <div className={`bg-white rounded-md md:flex md:justify-between md:items-center absolute md:static duration-1000 mt-6 pl-10 pe-10 pb-3 md:mt-0 md:pt-3 w-full ${open ? 'top-4' : '-top-[384px]'}`}>
+                    <Link to={'/'} onClick={() => setOpen(!open)}>
+                        <img src={logo} className='h-[36px] md:h-[56px]' alt="logo" />
+                    </Link>
+
+                    <ul onClick={() => setOpen(!open)} className='py-1 sm:hidden  md:flex gap-5 text-base font-normal'>
+                        <li className='my-3'>
+                            <ActiveLink to='/'>Home</ActiveLink>
+                        </li>
+                        <li className='my-3'>
+                            <ActiveLink to='/donations'>Donations</ActiveLink>
+                        </li>
+                        <li className='my-3'>
+                            <ActiveLink to='/statistics'>Statistics</ActiveLink>
+                        </li>
                     </ul>
-                </nav>
-            </div>
+                </div>
+            </Container>
 
-        </div>
+        </nav>
     );
 };
 

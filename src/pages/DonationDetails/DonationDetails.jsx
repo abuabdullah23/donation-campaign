@@ -18,7 +18,7 @@ const DonationDetails = () => {
     return (
         <div className='my-12'>
             <div className='w-full relative rounded-md'>
-                <img className='w-full h-[calc(100vh-160px)] object-cover rounded-md' src={image} alt="donation image" />
+                <img className='w-full h-[300px] lg:h-[400px] object-cover rounded-md' src={image} alt="donation image" />
                 <div className='absolute bg-[#0B0B0B80] w-full bottom-0 py-6 px-5 rounded-b-md'>
                     <button
                         onClick={() => handleDonation()}

@@ -65,11 +65,11 @@ const Statistics = () => {
                 <div className='flex flex-col gap-5 lg:flex-row lg:gap-12 items-center'>
                     <div className='flex items-center gap-3'>
                         <h3>Your Donation</h3>
-                        <dive className='w-24 h-3 bg-[#00C49F]'></dive>
+                        <dive className='w-24 h-3 bg-[#00C49F] rounded-sm'></dive>
                     </div>
                     <div className='flex items-center gap-3'>
                         <h3>Total Donation</h3>
-                        <dive className='w-24 h-3 bg-[#FF444A]'></dive>
+                        <dive className='w-24 h-3 bg-[#FF444A] rounded-sm'></dive>
                     </div>
                 </div>
             </div>

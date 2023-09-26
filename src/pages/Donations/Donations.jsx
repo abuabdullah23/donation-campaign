@@ -3,7 +3,7 @@ import { Link, useLoaderData } from 'react-router-dom';
 import { getStoredDonation } from '../../utils/localStorage';
 import DonationSingleCard from './DonationSingleCard';
 
-const Donation = () => {
+const Donations = () => {
     const donationData = useLoaderData();
     const [data, setData] = useState([]);
     const [dataLength, setDataLength] = useState(4);
@@ -33,7 +33,7 @@ const Donation = () => {
                                 />)
                             }
                         </div>
-                        <div className={`flex justify-center mt-10 ${dataLength === data.length && 'hidden'}`}>
+                        <div className={`flex justify-center mt-10 ${dataLength === data.length || data.length < 5 ? 'hidden' : ''}`}>
                             <button onClick={handleShowAllData} className='py-2 px-4 bg-[#009444] hover:bg-[#009419] rounded-md text-white text-lg font-semibold'>See All</button>
                         </div>
                     </>
@@ -47,9 +47,9 @@ const Donation = () => {
                         </div>
                     </>
             }
-        </div>
+        </div >
 
     );
 };
 
-export default Donation;
+export default Donations;

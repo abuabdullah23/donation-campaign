@@ -1,6 +1,6 @@
 # Donation Campaign
 
-3 features in this assignment:
+3 features in this website:
 
 - **Responsive Design:** This website is full responsive for all device, like mobile, tablet and other device.
 - **Pie Chart in Statistics page:** The pie chart show the percentage of donations (your donations) against the total donations.

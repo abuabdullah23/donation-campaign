@@ -30,7 +30,7 @@ const DonationDetails = () => {
                 <h2
                     className='text-2xl font-bold'
                 >{title}</h2>
-                <p className='text-justify'><strong>Description:</strong> {description}</p>
+                <p className='text-justify'>{description}</p>
             </div>
         </div>
     );

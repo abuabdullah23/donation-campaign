@@ -1,46 +1,50 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../../assets/images/Logo.png'
-import { BsList } from 'react-icons/bs'
-import { MdClose } from 'react-icons/md'
-import ActiveLink from '../ActiveLink/ActiveLink';
 import Container from '../Container/Container';
+import logo from '../../assets/images/Logo.png'
+import { Link } from 'react-router-dom';
+import ActiveLink from '../ActiveLink/ActiveLink'
 
 const Navbar = () => {
-    const [open, setOpen] = useState(false);
     return (
         <nav className='bg-white sticky top-0 z-10 drop-shadow-sm'>
             <Container>
-                <div className='flex items-center gap-5'>
-                    <div onClick={() => setOpen(!open)} className='py-2 md:hidden'>
-                        <span>{
-                            open === true ?
-                                <MdClose className="h-6 w-6" />
-                                : <BsList className="h-6 w-6" />
-                        }</span>
-                    </div>
+                <div className="navbar flex items-center justify-between">
                     <Link to={'/'}>
-                        <img src={logo} className='h-[36px] md:h-[56px] my-1' alt="logo" />
+                        <img className="h-11" src={logo} alt="logo" />
                     </Link>
-                </div>
+                    <div className="hidden lg:block">
+                        <ul className="flex items-center gap-6 px-1 text-base text-black font-medium">
+                            <li><ActiveLink to={'/'}>Home</ActiveLink></li>
+                            <li><ActiveLink to={'/donations'}>Donations</ActiveLink></li>
+                            <li><ActiveLink to={'/statistics'}>Statistics</ActiveLink></li>
+                        </ul>
 
+                    </div>
 
-                <div className={`bg-white rounded-md md:flex md:justify-between md:items-center absolute md:static duration-1000 mt-6 pl-10 pe-10 pb-3 md:mt-0 md:pt-3 w-full ${open ? 'top-4' : '-top-[384px]'}`}>
-                    <ul onClick={() => setOpen(!open)} className='py-1 sm:hidden  md:flex gap-5 text-base font-normal'>
-                        <li className='my-3'>
-                            <ActiveLink to='/'>Home</ActiveLink>
-                        </li>
-                        <li className='my-3'>
-                            <ActiveLink to='/donations'>Donations</ActiveLink>
-                        </li>
-                        <li className='my-3'>
-                            <ActiveLink to='/statistics'>Statistics</ActiveLink>
-                        </li>
-                    </ul>
+                    <div className="dropdown p-0 -md:mr-8 lg:hidden">
+                        <div className="drawer lg:hidden">
+                            <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+                            <div className="drawer-content">
+                                <label htmlFor="my-drawer" className="drawer-button text-black">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        className="inline-block w-5 h-5 stroke-current">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                            d="M4 6h16M4 12h16M4 18h16"></path>
+                                    </svg>
+                                </label>
+                            </div>
+                            <div className="drawer-side">
+                                <label htmlFor="my-drawer" className="drawer-overlay"></label>
+                                <ul className="menu p-4 w-60 md:w-80 h-full bg-base-200 text-base-content">
+                                    <li><ActiveLink to={'/'}>Home</ActiveLink></li>
+                                    <li><ActiveLink to={'/donations'}>Donations</ActiveLink></li>
+                                    <li><ActiveLink to={'/statistics'}>Statistics</ActiveLink></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </Container>
-
-        </nav>
+        </nav >
     );
 };
 
